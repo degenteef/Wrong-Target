@@ -1,0 +1,85 @@
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: sticky;
+    top: 1px;
+    z-index: 999;
+}
+
+.socials_container {
+    flex-direction: row;
+}
+
+.socials_btn {
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    border-radius: 80%;
+    font-size: 0;
+    margin: .5rem 1rem 3rem;
+    width: 4rem;
+    height: 4rem;
+    
+}
+
+.socials_btn:hover {
+    background-position: center;
+    background-size: 80%;
+    transition: ease-in-out 0.3s;
+}
+
+.telegram{
+    background-image: url('/photos/social_photos/telegram.png')
+}
+
+.twitter{
+    background-image: url('/photos/social_photos/x.png')
+}
+.pump{
+    background-image: url('/photos/social_photos/pump-funtb.png')
+}
+.dexscreener{
+    background-image: url('/photos/social_photos/dexscreener.png')
+}
+.dextools{
+    background-image: url('/photos/social_photos/dextools.svg')
+}
+.birdeye{
+    background-image: url('/photos/social_photos/birdeye.png')
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .socials_btn {
+        background-position: center;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        border-radius: 80%;
+        font-size: 0;
+        margin: .5rem 1rem 3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    .socials_text {
+        font-size: 3rem;
+    }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

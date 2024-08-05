@@ -1,0 +1,70 @@
+:root {
+    /* sizes  */
+
+    /* text */
+    ---main-text: blue;
+    ---subtext: red;
+    ---background-text: ;
+
+    /* background colour */
+    ---bg-colour: rgba(124, 4, 4, 0.445);
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    pointer-events: none; user-select: none;
+}
+
+body {
+    background-size: 3rem;
+    background-image: url('/photos/images/gifver.gif');
+    background-color: var(---bg-colour);
+    background-blend-mode: multiply;
+    animation: scroll 100s linear infinite;
+    font-family: 'Rocher';
+}
+
+@keyframes scroll {
+    100% {
+      background-position: -99.188rem 140.313rem;
+    }
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 1;
+  }
+
+@keyframes turn {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}

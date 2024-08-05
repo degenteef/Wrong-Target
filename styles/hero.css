@@ -1,0 +1,107 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.hero_img {
+    width: 50%;
+    border: .5rem solid white;
+    border-radius: 25%;
+    animation: turn 3s linear infinite;
+}
+
+.hero_text1 {
+    overflow-wrap: anywhere;
+    font-palette: --Mint;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+#ticker {
+    font-size: 3rem;
+}
+
+#coin_name {
+    font-size: 3rem;
+}
+
+#ca {
+    font-size: .7rem;
+}
+
+#desc {
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 1;
+  }
+
+@keyframes turn {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+/* xs */
+@media (min-width: 475px) {
+    #ca {
+        font-size: 1rem;
+    }
+    
+    #desc {
+        font-size: 1.3rem;
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    #ca {
+        font-size: 1.6rem;
+    }
+    
+    #desc {
+        font-size: 2rem;
+    }
+
+    .hero_img {
+        width: 40%;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .hero_img {
+        width: 30%;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .hero_img {
+        width: 20%;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
